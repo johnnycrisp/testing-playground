@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing forms and tables</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="nav-container"><a href="index.html"><img class="logo" src="images/company_logo.png"
+                    alt="Company logo / Christopher Walken" title="Company logo"></a>
+                <nav>
+                    <ul class="nav-bar">
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="#">Images</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+    <h2>Time for a Form</h2>
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend>Basic Information</legend>
+            <label for="name">Name</label> <input type="text" id="name" name="user_name">
+            <label for="age">Age</label>
+            <input type="text" id="age" name="user_age">
+            <label for="occupation">Occupation</label>
+            <input type="text" id="occupation" name="user_occupation">
+            <label for="Email">Email</label>
+            <input type="email" id="email" name="user_email">
+            <label for="Password">Password</label>
+            <input type="password" id="password" name="user_password">
+        </fieldset>
+    
+        <fieldset>
+            <legend>Tell us a Little About Yourself</legend>
+            <textarea></textarea>
+        </fieldset>
+    
+        <fieldset>
+            <legend>How do you feel now?</legend>
+            <input type="checkbox" id="daunted" value="daunted" name="user_sentiments"><label
+                for="daunted">Daunted!</label><br>
+    
+            <input type="checkbox" id="confused" value="confused" name="user_sentiments"><label
+                for="confused">Confused</label><br>
+    
+            <input type="checkbox" id="dazzled" value="dazzled" name="user_sentiments"><label>Dazzled</label><br>
+    
+            <input type="checkbox" id="woozy" value="woozy" name="user_sentiments"><label>Woozy</label>
+        </fieldset>
+        <fieldset>
+            <legend>Decide whether or not you like this form.</legend>
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" value="yes" name="user_response">
+    
+            <label for="no">No</label>
+            <input type="radio" id="no" value="no" name="user_response">
+        </fieldset>
+    
+    
+        <button type="reset">Delete Responses</button>
+    </form>
+<div class="container">
+<h2>Time for a Table</h2>
+<table>
+    
+</table>
+</div>
+
+
+</body>
+</html>

@@ -9,11 +9,30 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<div class="wrapper">
+<body>
 
-    <body>
+    <header>
+        <div class="wrapper">
+            <div class="nav-container"><img class="logo" src="images/company_logo.png" alt="Company logo / Christopher Walken" title="Company logo">
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+ </header>
+   <div class="wrapper">
+    <div class="container">
+    <section class="welcome">
         <h1>Excellent Practice Site</h1>
-        <p>Top-notch skills.</p>
+        <p class="intro">Top-notch skills. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatum aperiam doloremque? A saepe consectetur qui maiores ipsa quisquam recusandae eum. Facere asperiores animi at sit repellendus aliquid sunt incidunt, assumenda voluptate sapiente iusto delectus excepturi similique ut optio provident rerum dignissimos qui harum modi aperiam neque saepe? Magni, officia!</p>
+        </div>
+</section>
+</div>
+ 
+    <main>
         <h2>Time for a Form</h2>
         <form action="index.html" method="post">
             <fieldset>
@@ -37,28 +56,41 @@
             <fieldset>
                 <legend>How do you feel now?</legend>
                 <input type="checkbox" id="daunted" value="daunted" name="user_sentiments"><label
-                for="daunted">Daunted!</label><br>
+                    for="daunted">Daunted!</label><br>
 
-            <input type="checkbox" id="confused" value="confused" name="user_sentiments"><label
-                for="confused">Confused</label><br>
+                <input type="checkbox" id="confused" value="confused" name="user_sentiments"><label
+                    for="confused">Confused</label><br>
 
-            <input type="checkbox" id="dazzled" value="dazzled" name="user_sentiments"><label>Dazzled</label><br>
+                <input type="checkbox" id="dazzled" value="dazzled" name="user_sentiments"><label>Dazzled</label><br>
 
-            <input type="checkbox" id="woozy" value="woozy" name="user_sentiments"><label>Woozy</label>
+                <input type="checkbox" id="woozy" value="woozy" name="user_sentiments"><label>Woozy</label>
             </fieldset>
             <fieldset>
-            <legend>Decide whether you like this form.</legend>
-            <label for="yes">Yes</label>
-            <input type="radio" id="yes" value="yes" name="user_response">
-            
-            <label for="no">No</label> 
-            <input type="radio" id="no" value="no" name="user_response">
-        </fieldset>
-            
+                <legend>Decide whether or not you like this form.</legend>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" value="yes" name="user_response">
+
+                <label for="no">No</label>
+                <input type="radio" id="no" value="no" name="user_response">
+            </fieldset>
+
 
             <button type="reset">Delete Responses</button>
         </form>
-    </body>
+
+    </main>
 </div>
+<footer>
+        <p class="logo">Logo</p>
+        <nav>
+            <ul class="nav-bar">
+                <li>Form</li>
+                <li>Image</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+</footer>
+</body>
+
 
 </html>
