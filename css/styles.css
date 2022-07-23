@@ -2,23 +2,86 @@
   box-sizing: border-box;
 }
 
+body{
+font-family:'Arimo', sans-serif;
+  min-width: 300px;
+}
+.button {
+  background-color:aqua;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  box-shadow: 1px 2px 0 0px;
+  color:rgb(18, 18, 97);
+  font-weight: 500;
+  cursor:pointer;
+
+}
+
+.button:hover {
+  background-color:rgb(164, 37, 171);
+  text-transform: uppercase;
+  border-bottom: 1px solid greenyellow;
+
+}
+
+h2 {
+    text-align: center;
+  }
+
+.welcome {
+  background-color: bisque;
+}
+
+.intro {
+    max-width: 900px;
+}
+
 .logo {
   height: 120px;
   border-radius: 50%;
 }
+fieldset {
+  border: none;
+  margin-bottom:8px;
+  background-color: coral;
+
+}
+
+legend {
+  font-style: italic;
+  background-color: cadetblue;
+}
+form {
+  
+  background-color: yellow;
+  border: 1px solid grey;
+  text-align: center; 
+}
+.basic_info {
+display:flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+main .container:first-child {
+  background-color: purple;
+}
 
 .wrapper {
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 16px 16px;
 }
 .container {
     margin-top: 0;
-    padding: 32px 0;
+    padding: 16px 8px 24px;
+    text-align: center;
 
 }
+
 main {
-  padding: 32px;
+  background-color: greenyellow;
 }
+
 header {
   background-image: url("../images/background_img.png");
 
@@ -78,7 +141,7 @@ h1,
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   .nav-bar,
   .nav-container {
     flex-direction: row;
@@ -102,4 +165,5 @@ h1,
   .intro {
     text-align: left;
   }
+  
 }
