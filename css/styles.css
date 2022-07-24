@@ -2,55 +2,63 @@
   box-sizing: border-box;
 }
 
-body{
-font-family:'Arimo', sans-serif;
+body {
+  font-family: "Arimo", sans-serif;
   min-width: 300px;
   background-color: rgb(111, 111, 220);
 }
+
+.container_welcome {
+
+    background: url(../images/blow-out.png) no-repeat center top;
+    padding: 21px;
+    height: 40vh;
+    color: bisque;
+  }
 .button {
-  background-color:aqua;
+  background-color: aqua;
   border: 1px solid aqua;
   border-radius: 5px;
   box-shadow: 1px 2px 0 0px;
-  color:rgb(18, 18, 97);
+  color: rgb(18, 18, 97);
   font-weight: 500;
-  cursor:pointer;
-
+  cursor: pointer;
 }
 
 .button:hover {
-  background-color:rgb(164, 37, 171);
+  background-color: rgb(164, 37, 171);
   text-transform: uppercase;
   border-bottom: 1px solid greenyellow;
-  transform: scale(.9);
+  transform: scale(0.9);
+}
 
+input[type="email"]::placeholder {
+  font-weight: 300;
+  font-style: italic;
+  
 }
 
 h2 {
-    text-align: center;
-  }
-
-
+  text-align: center;
+}
 
 .intro {
-    max-width: 900px;
+  max-width: 900px;
 }
 
 .logo {
   height: 120px;
   border-radius: 50%;
   cursor: pointer;
-  
 }
 .logo:hover {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 fieldset {
   border: none;
-  margin-bottom:8px;
+  margin-bottom: 8px;
   background-color: coral;
   border-radius: 5px;
-
 }
 
 legend {
@@ -59,45 +67,43 @@ legend {
   text-align: left;
 }
 textarea {
-  resize:vertical;
-  width:100%;
-
+  resize: vertical;
+  width: 100%;
 }
 
 form {
-  
   background-color: yellow;
   border: 1px solid grey;
-  text-align: center; 
+  text-align: center;
   border-radius: 5px;
   padding: 16px;
 }
 .basic_info {
-display:flex;
-flex-direction: column;
-flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-main .container:first-child {
+main .card_container:first-child {
   background-color: purple;
 }
 .first_bit > .button:hover {
-  background-color:yellow ;
+  background-color: yellow;
 }
 
 .wrapper {
   margin: 0 auto;
   padding: 0 16px 16px;
+  max-width: 1300px;
 }
-.container {
-    margin-top: 12px;
-    margin-bottom: 12px;
-    padding: 16px 8px 24px;
-    text-align: center;
-    border-radius: 5px;
-
+.card_container {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 16px 8px 24px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: antiquewhite;
 }
-
 
 header {
   background-image: url("../images/background_img.png");
@@ -148,6 +154,10 @@ h1,
   text-align: center;
 }
 
+input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+
 @media screen and (min-width: 650px) {
   .nav-bar {
     flex-direction: row;
@@ -156,12 +166,28 @@ h1,
   .nav-bar li {
     margin: 0 5px;
   }
+
+  main {
+
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+
+  .card_container {
+    flex:1 50%;
+    max-width: 50%;
+
+  }
+
+  
 }
 
 @media screen and (min-width: 900px) {
   .nav-bar,
   .nav-container {
     flex-direction: row;
+
   }
 
   .nav-container {
@@ -178,9 +204,39 @@ h1,
     margin-bottom: auto;
   }
 
-  h1,
+
+  /* main {
+
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+
+  .card_container {
+    flex:1 50%;
+    max-width: 50%;
+
+  } */
+
+  main {
+
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+
+  }
+
+ h1,
   .intro {
     text-align: left;
   }
-  
+
+  .card_container {
+    flex:1 33%;
+    max-width: 50%;
+
+  }
+  .card_container:last-child {
+   justify-self: center;  
+  }
 }
