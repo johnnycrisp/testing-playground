@@ -105,7 +105,7 @@ main .card_container:first-child {
   background-color: antiquewhite;
 }
 
-header {
+.header_wrapper {
   background-image: url("../images/background_img.png");
 
   background-color: rgb(112, 240, 112);
