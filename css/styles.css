@@ -116,6 +116,18 @@ footer {
   padding: 32px;
 }
 
+table {
+  text-align: center;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+td, th {
+
+padding: 8px;
+border: 1px solid black;
+}
+
 /* Flex */
 
 .nav-container,

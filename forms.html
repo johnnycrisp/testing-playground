@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,86 +8,110 @@
     <title>Testing forms and tables</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
-            <div class="nav-container"><a href="index.html"><img class="logo" src="images/company_logo.png"
+        <div class="nav-container"><a href="index.html"><img class="logo" src="images/company_logo.png"
                     alt="Company logo / Christopher Walken" title="Company logo"></a>
-                <nav>
-                    <ul class="nav-bar">
-                        <li><a href="forms.html">Forms</a></li>
-                        <li><a href="#">Images</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
+            <nav>
+                <ul class="nav-bar">
+                    <li><a href="forms.html">Forms</a></li>
+                    <li><a href="#">Images</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper">
+            <form action="index.html" method="post">
+                <h2>Time for a Form</h2>
+                <fieldset class="basic_info">
+                    <legend>Basic Information</legend>
+                    <label for="name">Name</label> <input class="info" type="text" id="name" name="user_name">
+                    <label for="age">Age</label>
+                    <input type="text" id="age" name="user_age">
+                    <label for="occupation">Occupation</label>
+                    <input type="text" id="occupation" name="user_occupation">
+                    <label for="Email">Email</label>
+                    <input type="email" id="email" name="user_email">
+                    <label for="Password">Password</label>
+                    <input type="password" id="password" name="user_password">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tell us a Little About Yourself</legend>
+                    <textarea></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>How do you feel now?</legend>
+                    <input type="checkbox" id="daunted" value="daunted" name="user_sentiments"><label
+                        for="daunted">Daunted!</label><br>
+
+                    <input type="checkbox" id="confused" value="confused" name="user_sentiments"><label
+                        for="confused">Confused</label><br>
+
+                    <input type="checkbox" id="dazzled" value="dazzled"
+                        name="user_sentiments"><label>Dazzled</label><br>
+
+                    <input type="checkbox" id="woozy" value="woozy" name="user_sentiments"><label>Woozy</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Decide whether or not you like this form.</legend>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" value="yes" name="user_response">
+
+                    <label for="no">No</label>
+                    <input type="radio" id="no" value="no" name="user_response">
+                </fieldset>
+
+
+                <button type="reset" class="button">Delete Responses</button>
+            </form>
+            <div class="container">
+                <h2>Time for a Table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Size</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Johnny</td>
+                        <td>johnny@johnny.com</td>
+                        <td>Large</td>
+                        </tr>
+                        <tr>
+                            <td>Johnny</td>
+                            <td>johnny@johnny.com</td>
+                            <td>Large</td>
+                        </tr>
+                        <tr>
+                            <td>Johnny</td>
+                            <td>johnny@johnny.com</td>
+                            <td>Large</td>
+                        </tr>
+                        <tr>
+                            <td>Johnny</td>
+                            <td>johnny@johnny.com</td>
+                            <td>Large</td>
+                        </tr>
+
+                    </tbody>
+
+
+                </table>
             </div>
-            <div class="wrapper">
-    <form action="index.html" method="post">
-        <h2>Time for a Form</h2>
-        <fieldset class="basic_info">
-            <legend>Basic Information</legend>
-            <label for="name">Name</label> <input class="info" type="text" id="name" name="user_name">
-            <label for="age">Age</label>
-            <input type="text" id="age" name="user_age">
-            <label for="occupation">Occupation</label>
-            <input type="text" id="occupation" name="user_occupation">
-            <label for="Email">Email</label>
-            <input type="email" id="email" name="user_email">
-            <label for="Password">Password</label>
-            <input type="password" id="password" name="user_password">
-        </fieldset>
-    
-        <fieldset>
-            <legend>Tell us a Little About Yourself</legend>
-            <textarea></textarea>
-        </fieldset>
-    
-        <fieldset>
-            <legend>How do you feel now?</legend>
-            <input type="checkbox" id="daunted" value="daunted" name="user_sentiments"><label
-                for="daunted">Daunted!</label><br>
-    
-            <input type="checkbox" id="confused" value="confused" name="user_sentiments"><label
-                for="confused">Confused</label><br>
-    
-            <input type="checkbox" id="dazzled" value="dazzled" name="user_sentiments"><label>Dazzled</label><br>
-    
-            <input type="checkbox" id="woozy" value="woozy" name="user_sentiments"><label>Woozy</label>
-        </fieldset>
-        <fieldset>
-            <legend>Decide whether or not you like this form.</legend>
-            <label for="yes">Yes</label>
-            <input type="radio" id="yes" value="yes" name="user_response">
-    
-            <label for="no">No</label>
-            <input type="radio" id="no" value="no" name="user_response">
-        </fieldset>
-    
-    
-        <button type="reset" class="button">Delete Responses</button>
-    </form>
-<div class="container">
-<h2>Time for a Table</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Height</th>
-
-        </tr>
-
-        <tc></tc>
-        <tc></tc>
-    </thead>
-    
-</table>
-</div>
 
 
 </body>
+
 </html>
