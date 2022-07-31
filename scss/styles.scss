@@ -1,0 +1,18 @@
+
+// Partials
+
+//Utilities 
+
+@import 'partials/functions/variables.scss', 'partials/functions/mixins.scss';
+
+//Base
+
+@import 'partials/base/main-styles.scss', 'partials/base/reset';
+
+//Layout 
+
+@import 'partials/layout/containers', 'partials/layout/header', 'partials/layout/card', 'partials/layout/footer';
+
+// Component
+
+@import 'partials/component/buttons', 'partials/component/icons', 'partials/component/images', 'partials/component/nav';
