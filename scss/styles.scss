@@ -3,16 +3,17 @@
 
 //Utilities 
 
-@import 'partials/functions/variables.scss', 'partials/functions/mixins.scss';
+@import 'partials/utilities/variables.scss', 'partials/utilities/mixins.scss', 'partials/utilities/functions.scss', 'partials/utilities/helpers.scss' ;
 
 //Base
 
 @import 'partials/base/main-styles.scss', 'partials/base/reset';
 
-//Layout 
-
-@import 'partials/layout/containers', 'partials/layout/header', 'partials/layout/card', 'partials/layout/footer';
-
 // Component
 
-@import 'partials/component/buttons', 'partials/component/icons', 'partials/component/images', 'partials/component/nav';
+@import 'partials/component/buttons', 'partials/component/icons', 'partials/component/images', 'partials/component/nav', 'partials/component/form','partials/component/media-queries';
+
+//Layout 
+
+@import 'partials/layout/containers', 'partials/layout/header', 'partials/layout/card', 'partials/layout/footer', 'partials/layout/grid' ;
+

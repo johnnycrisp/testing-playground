@@ -1,0 +1,10 @@
+.logo {
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.logo:hover {
+    transform: scale(0.9);
+}

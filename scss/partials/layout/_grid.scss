@@ -1,0 +1,42 @@
+.images-page {
+    display: grid;
+    width: 100%;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px repeat(auto-fit, 1fr) repeat(auto-fit, 1fr) 100px;
+    grid-template-areas: 
+    "img-header img-header"
+    "img-main img-aside"
+    "img-main img-aside"
+    "img-footer img-footer";
+}
+
+.img-header {
+
+    grid-area: img-header;
+}
+
+.img-aside {
+
+    grid-area: img-aside;
+    background-color: aquamarine;
+    margin-top: 15px;
+
+    ul li {    
+
+        text-align: center;
+    }
+
+}
+
+.img-main {
+
+margin-top: 15px;
+    grid-area: img-main;
+    
+}
+
+.img-footer {
+
+    grid-area: img-footer;
+}

@@ -1,0 +1,17 @@
+.container_welcome {
+    background: url(../images/blow-out.png) no-repeat center top;
+    padding: 21px;
+    min-height: 40vh;
+    color: bisque;
+}
+
+main .card_container:first-child {
+    background-color: purple;
+}
+
+.card_container {
+    padding: 16px 8px 24px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}

@@ -1,0 +1,12 @@
+//Flex functions
+
+@function px-to-pc($target, $context: $max-width) {
+    @return ($target / $context) * 100%; //converts pixels to percentage of max-width
+}
+
+@function per-line($items) {
+
+    $gt-pct: px-to-pc($gutter) * 2; //gutter as a percentage of max-width, x2 to get total value of both gutters
+    $g-total: $items * $gt-pct; //g-total is total gutter value of each flex line
+    @return (100% / $items) - $g-total; // total available width 100%, divided by number of items minus whatever their total gutter value is. 
+}
