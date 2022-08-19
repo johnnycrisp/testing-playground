@@ -4,6 +4,8 @@ const list = document.querySelector('.list');
 
 const toggleButton = document.querySelector('.toggle-btn');
 
+const removeButton = document.querySelector('.remove-btn');
+
 //Hide and show list items 
 
 toggleButton.addEventListener('click', () => {
@@ -29,4 +31,13 @@ mainButton.addEventListener('click', () => {
     );
     myInput.value = '';
 } );
+
+// Remove task button
+
+removeButton.addEventListener('click', () => {
+
+    const lastItem = document.querySelector('ul li:last-child');
+    
+    lastItem.remove();
+});
 

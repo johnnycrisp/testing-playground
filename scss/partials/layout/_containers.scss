@@ -15,3 +15,36 @@ main .card_container:first-child {
     border-radius: 5px;
     background-color: antiquewhite;
 }
+
+.todo-wrapper {
+
+    width: 60vw;
+    margin: 25px auto;
+    background-color: goldenrod;
+    padding: 20px;
+    border-radius: 12px;
+
+
+    & li {
+        min-height: 44px;
+        padding: 12px;
+        background-color: blue;
+        color: white;
+        border-radius: 6px;
+        text-align: center;
+        margin: 8px 0;
+    }
+}
+
+.todo-input-container {
+    width: 100%;
+
+    .input-main {
+        width: calc(100% - 170px);
+    }
+
+    .main-btn {
+
+        width: 160px;
+    }
+}

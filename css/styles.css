@@ -588,6 +588,39 @@ ol {
   background-color: yellow;
 }
 
+.main-btn, .toggle-btn, .remove-btn {
+  min-height: 44px;
+  max-width: 160px;
+  background-color: aqua;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  box-shadow: 1px 2px 0 0px;
+  color: rgb(18, 18, 97);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 1s ease-out;
+  transition-property: background-color, transform, border-bottom;
+  margin: 6px 0;
+}
+.main-btn:hover, .toggle-btn:hover, .remove-btn:hover {
+  background-color: rgb(164, 37, 171);
+  border-bottom: 1px solid greenyellow;
+}
+
+.remove-btn {
+  background-color: tomato;
+  border: 1px solid tomato;
+}
+
+.input-main {
+  min-height: 44px;
+  margin-left: 8px;
+  border-radius: 5px;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  box-shadow: 1px 2px 0 0px;
+}
+
 .logo {
   height: 120px;
   border-radius: 50%;
@@ -744,6 +777,43 @@ main .card_container:first-child {
   text-align: center;
   border-radius: 5px;
   background-color: antiquewhite;
+}
+
+.todo-wrapper {
+  width: 60vw;
+  margin: 25px auto;
+  background-color: goldenrod;
+  padding: 20px;
+  border-radius: 12px;
+}
+.todo-wrapper li {
+  min-height: 44px;
+  padding: 12px;
+  background-color: blue;
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.todo-input-container {
+  width: 100%;
+}
+.todo-input-container .input-main {
+  width: calc(100% - 170px);
+}
+.todo-input-container .main-btn {
+  width: 160px;
+}
+
+.card-title-todo {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .images-page {

@@ -16,6 +16,27 @@
     transform: scale(0.9);
 }
 
+
+
 .first_bit>.button:hover {
     background-color: yellow;
+}
+
+.main-btn, .toggle-btn, .remove-btn {
+    @include button;
+    margin: 6px 0;
+}
+
+.remove-btn {
+    background-color: tomato;
+    border: 1px solid tomato;
+}
+
+.input-main {
+    min-height: 44px;
+    margin-left: 8px;
+    border-radius: 5px;
+    border: 1px solid aqua;
+        border-radius: 5px;
+        box-shadow: 1px 2px 0 0px;
 }
