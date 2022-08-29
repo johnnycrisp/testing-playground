@@ -36,7 +36,7 @@ mainButton.addEventListener('click', () => {
 
 removeButton.addEventListener('click', () => {
 
-    const lastItem = document.querySelector('ul li:last-child');
+    const lastItem = list.lastElementChild;
     
     lastItem.remove();
 });
