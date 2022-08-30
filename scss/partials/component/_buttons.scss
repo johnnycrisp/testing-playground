@@ -10,6 +10,13 @@
     transition-property: background-color, transform, border-bottom;
 }
 
+li button {
+
+    @include button;
+    padding: 8px;
+
+}
+
 .button:hover {
     background-color: rgb(164, 37, 171);
     border-bottom: 1px solid greenyellow;

@@ -578,6 +578,25 @@ ol {
   transition-property: background-color, transform, border-bottom;
 }
 
+li button {
+  min-height: 44px;
+  max-width: 160px;
+  background-color: aqua;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  box-shadow: 1px 2px 0 0px;
+  color: rgb(18, 18, 97);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 1s ease-out;
+  transition-property: background-color, transform, border-bottom;
+  padding: 8px;
+}
+li button:hover {
+  background-color: rgb(164, 37, 171);
+  border-bottom: 1px solid greenyellow;
+}
+
 .button:hover {
   background-color: rgb(164, 37, 171);
   border-bottom: 1px solid greenyellow;
