@@ -4,6 +4,27 @@ const list = document.querySelector('.list');
 
 const toggleButton = document.querySelector('.toggle-btn');
 
+const dogButton = document.querySelector('.dogGet');
+
+
+dogButton.addEventListener('click', fetchData);
+
+function fetchData(url){
+    return fetch(url)
+    .then(response => response.json())
+
+}
+
+fetchData('https://dog.ceo/api/breeds/image/random')
+.then(data => generateDogImg(data.message))
+
+function generateDogImg(data) {
+const dogHtml = `<img src="${data}" alt> <p>Here is your dog</p>
+`;
+// Element.innerHTML = dogHTML;
+
+}
+
 
 //Hide and show list items 
 
