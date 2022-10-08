@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,43 @@
     <title>Get a Dog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
+        integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<div class="header_wrapper">
-    <div class="nav-container"><img class="logo" src="images/company_logo.png" alt="Company logo / Christopher Walken"
-            title="Company logo">
-        <nav>
-            <ul class="nav-bar">
-                <li><a href="forms.html">Forms</a></li>
-                <li><a href="images.html">Images</a></li>
-                <li><a href="to-do.html">To Do</a></li>
-            </ul>
-        </nav>
-    </div>
-    </header>
-<body>
-    <div class="wrapper">
-    <legend for="dog">Get a Dog</legend>
-    <select type = "text" name="dog" id="dog"></select></div>
 
-    
+<body>
+    <header>
+        <div class="header_wrapper">
+            <div class="nav-container"><img class="logo" src="images/company_logo.png"
+                    alt="Company logo / Christopher Walken" title="Company logo">
+                <nav>
+                    <ul class="nav-bar">
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="to-do.html">To Do</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <div class="wrapper">
+        <legend for="dog">Get a Dog</legend>
+        <select type="text" name="dog" id="dog"></select>
+    </div>
+    <h2>Or play chess</h2>
+
+<div id="myBoard" style="width: 400px"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+        integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
+        crossorigin="anonymous"></script>
+        <!-- <script src="app.js"></script> -->
 </body>
+
 </html>
